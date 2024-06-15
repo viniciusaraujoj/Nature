@@ -1,0 +1,48 @@
+footer {
+  background: #222222;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.li__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+}
+
+.li__container li a {
+  color: #b7b7b7;
+  position: relative;
+  padding-left: 10px;
+}
+
+.li__container li a::before {
+  content: '';
+  width: 2px;
+  height: 8px;
+  top: 5px;
+  background: #404040;
+  position: absolute;
+  display: block;
+}
+
+.border {
+  width: 100%;
+  height: 1px;
+  background: #404040;
+}
+
+@media (max-width: 500px) {
+  .li__container li a {
+    font-size: 13px;
+  }
+
+  .li__container li a::before {
+    top: 3px;
+  }
+}
